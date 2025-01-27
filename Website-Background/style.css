@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bg-video{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+.content h3{
+ color: white;
+ font-weight: 800;
+ font-size: 8rem;
+ font-family: "Libre Baskerville", serif;
+ font-style: normal;
+ line-height: 12rem;
+
+ 
+}
+
+
+.content h3:hover{
+ -webkit-text-stroke: 2px white;
+ color: transparent;
+}
+
+.content span{
+    margin-left: 30%;
+    border: 2px solid white;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    color: white;
+    transition: 0.5 ease;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+.content span:hover{
+    background-color: white;
+    color: rgb(69, 68, 68);
+}
