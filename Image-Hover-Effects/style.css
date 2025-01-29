@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(150, 101, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    background-color: rgb(93, 138, 108);
+    width: 50vw;
+    min-height: 70vh;
+}
+
+.clip{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition-duration: all 0.5s;
+}
+
+.clip.one{
+    background-image: url(images/img1.jpg);
+    clip-path: polygon(0 0, 0 100%, 50% 0);
+}
+.clip.two{
+    background-image: url(images/img2.jpg);
+    clip-path: polygon(50% 0,100% 100%,100% 0);
+}
+.clip.three{
+    background-image: url(images/img3.jpg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%,0% 100%);
+}
