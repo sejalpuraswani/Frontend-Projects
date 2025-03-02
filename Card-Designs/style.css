@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#D9AFD9,#97D9E1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.Container{
+    background-color: white;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(44, 42, 42);
+    position: relative;
+}
+
+.Container > .heading{
+ margin-bottom: 1rem;
+ font-family: sans-serif;
+ text-align: left;
+}
+
+.Container > .MainContent{
+    color: black;
+    font-size: 1.2rem;
+    max-width: 400px;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Container > aside > span{
+    cursor: pointer;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(131, 219, 131);
+}
+
+.Container:before{
+ content: "";
+ position: absolute;
+ background-color: #e060ba;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 15px;
+ transition: 0.5s ease;
+ z-index: 1;
+}
+.Container:hover::before{
+    height: 100%;
+    
+}
+
+.Container:hover > .MainContent{
+    position: relative;
+    z-index: 2;
+    color: white;
+    transition: 0.5s;
+} 
+
+.Container:hover > .heading{
+    position: relative;
+    z-index: 2;
+    color: white;
+    transition: 0.5s;
+}
+.Container:hover > aside > span{
+    position: relative;
+    z-index: 2;
+    color: rgb(201, 8, 239);
+    transition: 0.5s;
+    background-color: rgb(250, 245, 245);
+} 
