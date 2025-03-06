@@ -33,7 +33,7 @@ async function weatherApi(city) {
 
     const data = await response.json();
     
-    
+    document.querySelector(".climate").textContent = data.weather[0].main;
     document.querySelector(".cityname").textContent = data.name;
     document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C`;
     document.querySelector(".Humidity").textContent = `${data.main.humidity}%`;

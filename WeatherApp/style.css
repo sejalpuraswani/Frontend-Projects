@@ -60,10 +60,13 @@ body{
 .details > h1,span{
     font-size: 3rem;
 }
+.details p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
 
 .details > img{
     margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 .otherDetails{
